@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/3902460fa2.js" crossorigin="anonymous"></script>
+
+  <title>ecommerce</title>
+</head>
+<body>
+  <header>    
+    <nav>      
+      <div> 
+          <a href="#inicio">Inicio</a>
+          <a href="#contenedor-principal">Productos</a>
+          <a href="#carrito-contenedor" onclick="gracias()">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+      </div>
+    </nav>
+  </header>
+  <h1 id="inicio">WEB-STORE</h1>
+  <p id="subti">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum numquam ipsam totam quibusdam aliquam sapiente, voluptas repellendus dolorem asperiores at tenetur! Culpa qui sed doloribus tempore fuga dolor, velit corporis.</P>
+ <h2 id="contenedor-principal">PRODUCTOS</h2>
+ <main id="contenedor-productos">
+  <!-- aqui iran los producto -->
+ </main>
+     <div class="modal-contenedor">
+        <div class="modal-carrito"> 
+          <div class=" ctn-titles-modal">
+              <div>MIS PRODUCTOS</div><div><button id="btn-vaciar">CANCELAR TODO</button></div>
+          </div>
+          
+          <div id="carrito-contenedor">
+              <div id="encabezado">
+                <div>CODE</div>
+                <div>Producto</div>
+                <div>Descripción</div>
+                <div>Cantidad</div>
+                <div>Precio Unitario</div>
+                <div>TOTAL</div>
+                <div> </div>
+              </div>
+          </div> <!-- Lista de Productos elegidos-->
+          <div id="total">Total a pagar: $ <span id="price-total">0</span><button id="btn-pay">CONFIRMAR</button></div>
+
+        </div>
+     </div>
+      
+     <footer id="footer">
+      <div>
+        <h3>Nuestra informacion</h3>
+        <p>Taluca Mexico</p>
+      </div>
+      <div>
+        <h3>Sobre Nosotros</h3>
+        <a href="">Centro de Soporte</a><br>
+        <a href="">Apoyo al cliente</a><br>
+        <a href="">Sobre nosotros</a><br>
+        <a href="">Derecho de copia</a><br>
+      </div>
+      <div>
+        <h3>Productos</h3>
+        <a href="">Mochilas</a><br>
+        <a href="">Camisetas</a><br>
+        <a href="">Gorros</a><br>
+      </div>
+      <div>
+        <h3>Contactanos</h3>
+        <a href="">fabebook</a><br>
+        <a href="">instagram</a><br>
+        <a href="">tweeter</a><br>
+      </div>
+    </footer>
+</body>
+
+<script src="./app.js"></script>
+</html>
